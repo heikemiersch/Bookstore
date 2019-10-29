@@ -1,0 +1,100 @@
+.banner {
+    display: flex;
+    flex-wrap: wrap;
+    height: 150px;
+    align-content: center;
+
+}
+
+.logo {
+    width: 150px;
+    padding: 10px;
+}
+
+#searchbar {
+    float: right;
+    height: 40px;
+    align-self: center;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image-size {
+    width: 250px;
+    height: 390px
+        /* width: 300px;
+    height: 467px */
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 250px;
+    height: 390px;
+    /* width: 300px;
+    height: 467px */
+    border: 1px solid #f1f1f1;
+    perspective: 1000px;
+    /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+    background-color: #bbb;
+    color: rgb(41, 33, 33);
+}
+
+/* Style the back side */
+.flip-card-back {
+    background-color: rgb(241, 241, 225);
+    color: rgb(173, 80, 80);
+    transform: rotateY(180deg);
+    font-family: Open Sans, sans-serif;
+}
+
+
+h1 {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 15px;
+    line-height: 25px;
+}
+
+
+COLOR PICKER colorpicker HOW TO Tabs Dropdowns Accordions Side Navigation Top Navigation Modal Boxes Progress Bars Parallax Login Form HTML Includes Google Maps Range Sliders Tooltips Slideshow Filter List Sort List SHARE CERTIFICATES HTML CSS JavaScript SQL Python PHP jQuery Bootstrap XML Top Tutorials HTML Tutorial CSS Tutorial JavaScript Tutorial How To Tutorial SQL Tutorial Python Tutorial W3.CSS Tutorial Bootstrap Tutorial PHP Tutorial jQuery Tutorial Java Tutorial C++Tutorial Top References HTML Reference CSS Reference JavaScript Reference SQL Reference Python Reference W3.CSS Reference Bootstrap Reference PHP Reference HTML Colors jQuery Reference Java Reference Angular Reference Top Examples HTML Examples CSS Examples JavaScript Examples How To Examples SQL Examples Python Examples W3.CSS Examples Bootstrap Examples PHP Examples jQuery Examples Java Examples XML Examples Web Certificates HTML Certificate CSS Certificate JavaScript Certificate SQL Certificate Python Certificate jQuery Certificate PHP Certificate Bootstrap Certificate XML Certificate W3Schools is optimized for learning,
+testing,
+and training. Examples might be simplified to improve reading and basic understanding. Tutorials,
+references,
+and examples are constantly reviewed to avoid errors,
+but we cannot warrant full correctness of all content. While using this site,
+you agree to have read and accepted our terms of use,
+cookie and privacy policy. Copyright 1999-2019 by Refsnes Data. All Rights Reserved. Powered by W3.CSS. W3Schools.com
