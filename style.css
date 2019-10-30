@@ -76,19 +76,65 @@
     background-color: rgb(241, 241, 225);
     color: rgb(173, 80, 80);
     transform: rotateY(180deg);
-    font-family: Open Sans, sans-serif;
+    font-family: Didact Gothic, sans-serif;
 }
-
 
 h1 {
     font-size: 20px;
 }
 
 h3 {
-    font-size: 15px;
-    line-height: 25px;
+    font-size: 17px;
+    line-height: 30px;
+    padding: 10px;
 }
 
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 100%;
+}
+
+/* The Close Button */
+.close {
+    color: #292323;
+    float: left;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
 
 COLOR PICKER colorpicker HOW TO Tabs Dropdowns Accordions Side Navigation Top Navigation Modal Boxes Progress Bars Parallax Login Form HTML Includes Google Maps Range Sliders Tooltips Slideshow Filter List Sort List SHARE CERTIFICATES HTML CSS JavaScript SQL Python PHP jQuery Bootstrap XML Top Tutorials HTML Tutorial CSS Tutorial JavaScript Tutorial How To Tutorial SQL Tutorial Python Tutorial W3.CSS Tutorial Bootstrap Tutorial PHP Tutorial jQuery Tutorial Java Tutorial C++Tutorial Top References HTML Reference CSS Reference JavaScript Reference SQL Reference Python Reference W3.CSS Reference Bootstrap Reference PHP Reference HTML Colors jQuery Reference Java Reference Angular Reference Top Examples HTML Examples CSS Examples JavaScript Examples How To Examples SQL Examples Python Examples W3.CSS Examples Bootstrap Examples PHP Examples jQuery Examples Java Examples XML Examples Web Certificates HTML Certificate CSS Certificate JavaScript Certificate SQL Certificate Python Certificate jQuery Certificate PHP Certificate Bootstrap Certificate XML Certificate W3Schools is optimized for learning,
 testing,

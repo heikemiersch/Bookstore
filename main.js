@@ -40,16 +40,41 @@ function createBooklist(books) {
     let description = document.createElement("h3");
     description.innerHTML = books[i].description;
     let button = document.createElement("button");
-    button.setAttribute("src", books[i].detail);
+
     button.innerHTML = "Details";
 
     button.addEventListener("click", function () {
+      let popUpImage = document.createElement("img");
+      popUpImage.setAttribute("src", books[i].detail);
+      myModal.appendChild(popUpImage);
 
-      createPopup(books)
+      // let showDetails = document.getElementById("popup");
+      // showDetails.innerHTML = books[i].detail;
+      // Get the modal
+      let modal = document.getElementById("myModal");
+      // Get the <span> element that closes the modal
+      let span = document.getElementsByClassName("close")[0];
+      modal.style.display = "block";
+      // When the user clicks on <span> (x), close the modal and reload page
+      span.onclick = function () {
+        modal.style.display = "none";
+        location.reload();
+      };
+      // // When the user clicks anywhere outside of the modal, close it and reload page
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+          location.reload();
+        }
+      };
+
+      // showDetails.display = "block";
+      // let detail = document.createElement("image");
+      // detail.setAttribute("src", books[i].detail);
+      // detail.innerHTML = books[i].detail;
+      // books[i].detail.display = "block";
       console.log(books[i].detail);
     });
-
-
 
 
     // putting elements into other elements
@@ -61,41 +86,8 @@ function createBooklist(books) {
     flipCardInner.appendChild(flipCardBack);
     flipCardInner.appendChild(flipCardFront);
     flipCard.appendChild(flipCardInner);
-    // flipCardBack.appendChild(popUpImage);
-
     container.appendChild(flipCard);
   }
-}
-
-function createPopup(books) {
-  // let popUpImage = document.createElement("img");
-
-  // popup.appendChild(popUpImage);
-
-  // let showDetails = document.getElementById("popup");
-  // showDetails.innerHTML = books[i].detail;
-  // Get the modal
-  let modal = document.getElementById("myModal");
-  // Get the <span> element that closes the modal
-  let span = document.getElementsByClassName("close")[0];
-  modal.style.display = "block";
-  // When the user clicks on <span> (x), close the modal
-  // span.onclick = function () {
-  //   modal.style.display = "none";
-  // }
-  // // When the user clicks anywhere outside of the modal, close it
-  // window.onclick = function (event) {
-  //   if (event.target == modal) {
-  //     modal.style.display = "none";
-  //   }
-  // }
-
-
-  // showDetails.display = "block";
-  // let detail = document.createElement("image");
-  // detail.setAttribute("src", books[i].detail);
-  // detail.innerHTML = books[i].detail;
-  // books[i].detail.display = "block";
 }
 
 function createSearchbar(books) {
