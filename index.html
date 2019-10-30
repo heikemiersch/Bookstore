@@ -5,22 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Bookstore</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Chilanka|Didact+Gothic|Inconsolata&display=swap"
+        rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" /> -->
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Chilanka|Open+Sans&display=swap" rel="stylesheet">
+
+    <title>Bookstore</title>
 </head>
 
 <body>
 
     <div class="banner">
         <img src="logoBookstore.jpg" alt="logo" class="logo">
-        <input type="text" id=searchbar placeholder="Search">
+        <input type="text" id="searchbar" placeholder="Search">
     </div>
 
     <div class="container" id="flipcard">
     </div>
 
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="showDetails" id="popup">
+            <span class="close">&times;</span>
+        </div>
+    </div>
+
+
     <script src="main.js"></script>
+
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script> -->
+
 </body>
 
 </html>
